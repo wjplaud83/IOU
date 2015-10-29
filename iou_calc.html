@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Plan Demo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=2">
+
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile.external-png-1.4.5.min.css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+  
+<div data-role="page" id="Home">
+	<div data-role="header">
+		<h1>IOU CALC</h1>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<ul data-role="listview">
+    <li><a href="#Who I Owe">WHO I OWE</a></li>
+    <li><a href="#Who Owes Me">WHO OWES ME</a></li>
+    <li><a href="#Random Thought">RANDOM THOUGHT</a></li>
+        <li><a href="https://www..com">WEBSITE (under construction)</a></li>
+        <li><a href="https://twitter.com" target="_blank">TWITTER</a></li>
+</ul>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+        <h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+   
+      
+
+//WHO I OWE   
+    
+    <div data-role="page" id="Who I Owe">
+
+	<div data-role="header">
+		<h1>WHO I OWE</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+	</div><!-- /header -->
+
+	<div role="IOU list" class="ui-content">
+<ol data-role="listview">
+    <li><a href="#FILE 1A">FILE 1</a></li>
+    <li><a href="#FILE 2A">FILE 2</a></li>
+    <li><a href="#FILE 3A">FILE 3</a></li>
+    <li><a href="#FILE 4A">FILE 4</a></li>
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+    //-------------
+        <div data-role="page" id="FILE 1A">
+
+	<div data-role="header">
+		<h1>File 1</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+               <a href="#Who I Owe" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-right">LIST</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<ol data-role="listview">
+<script language="javascript">
+function WriteToFile()
+{
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("C:\\NewFile.txt", true);
+var text=document.getElementById("TextArea1").innerText;
+s.WriteLine(text);
+s.WriteLine('***********************');
+s.Close();
+s.Save();
+}
+    
+ 
+</script>
+    <form name="abc">
+<textarea name="text"></textarea>
+        <button onclick="WriteToFile()">click to save</button>  
+</form> 
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+    //-------------       
+            <div data-role="page" id="FILE 2A">
+
+	<div data-role="header">
+		<h1>File 2</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+               <a href="#Who I Owe" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-right">LIST</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<ol data-role="listview">
+<script language="javascript">
+function WriteToFile()
+{
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("C:\\NewFile.txt", true);
+var text=document.getElementById("TextArea1").innerText;
+s.WriteLine(text);
+s.WriteLine('***********************');
+s.Close();
+s.Save();
+}
+</script>
+    <form name="abc">
+<textarea name="text"></textarea>
+<button onclick="WriteToFile()">click to save</Button>  
+</form> 
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+     //-------------   
+            <div data-role="page" id="FILE 3A">
+
+	<div data-role="header">
+		<h1>File 3</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+               <a href="#Who I Owe" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-right">LIST</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<ol data-role="listview">
+<script language="javascript">
+function WriteToFile()
+{
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("C:\\NewFile.txt", true);
+var text=document.getElementById("TextArea1").innerText;
+s.WriteLine(text);
+s.WriteLine('***********************');
+s.Close();
+s.Save();
+}
+</script>
+    <form name="abc">
+<textarea name="text"></textarea>
+<button onclick="WriteToFile()">click to save</Button>  
+</form> 
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+     //-------------      
+            <div data-role="page" id="FILE 4A">
+
+	<div data-role="header">
+		<h1>File 4</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+               <a href="#Who I Owe" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-right">LIST</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<ol data-role="listview">
+<script language="javascript">
+function WriteToFile()
+{
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("C:\\NewFile.txt", true);
+var text=document.getElementById("TextArea1").innerText;
+s.WriteLine(text);
+s.WriteLine('***********************');
+s.Close();
+s.Save();
+}
+</script>
+    <form name="abc">
+<textarea name="text"></textarea>
+<button onclick="WriteToFile()">click to save</Button>  
+</form> 
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+    
+  //WHO OWES ME
+    
+        <div data-role="page" id="Who Owes Me">
+
+	<div data-role="header">
+		<h1>WHO OWES ME</h1>
+        <a href="#Home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all">No text</a>
+	</div><!-- /header -->
+
+	<div role="IOU list" class="ui-content">
+<ol data-role="listview">
+    <li><a href="#FILE 1B">FILE 1</a></li>
+    <li><a href="#FILE 2B">FILE 2</a></li>
+    <li><a href="#FILE 3B">FILE 3</a></li>
+    <li><a href="#FILE 4B">FILE 4</a></li>
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+         //-------------
+    
+        <div data-role="page" id="FILE 1B">
+
+	<div data-role="header">
+		<h1>File 1</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+               <a href="#Who Owes Me" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-right">LIST</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<ol data-role="listview">
+<script language="javascript">
+function WriteToFile()
+{
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("C:\\NewFile.txt", true);
+var text=document.getElementById("TextArea1").innerText;
+s.WriteLine(text);
+s.WriteLine('***********************');
+s.Close();
+s.Save();
+}
+</script>
+    <form name="abc">
+<textarea name="text"></textarea>
+<button onclick="WriteToFile()">click to save</Button>  
+</form> 
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+        //-------------
+    
+            <div data-role="page" id="FILE 2B">
+
+	<div data-role="header">
+		<h1>File 2</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+               <a href="#Who Owes Me" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-right">LIST</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<ol data-role="listview">
+<script language="javascript">
+function WriteToFile()
+{
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("C:\\NewFile.txt", true);
+var text=document.getElementById("TextArea1").innerText;
+s.WriteLine(text);
+s.WriteLine('***********************');
+s.Close();
+s.Save();
+}
+</script>
+    <form name="abc">
+<textarea name="text"></textarea>
+<button onclick="WriteToFile()">click to save</Button>  
+</form> 
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+     //-------------   
+    
+            <div data-role="page" id="FILE 3B">
+
+	<div data-role="header">
+		<h1>File 3</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+               <a href="#Who Owes Me" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-right">LIST</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<ol data-role="listview">
+<script language="javascript">
+function WriteToFile()
+{
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("C:\\NewFile.txt", true);
+var text=document.getElementById("TextArea1").innerText;
+s.WriteLine(text);
+s.WriteLine('***********************');
+s.Close();
+s.Save();
+}
+</script>
+    <form name="abc">
+<textarea name="text"></textarea>
+<button onclick="WriteToFile()">click to save</Button>  
+</form> 
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+    
+        //-------------
+            <div data-role="page" id="FILE 4B">
+
+	<div data-role="header">
+		<h1>File 4</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+               <a href="#Who Owes Me" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-right">LIST</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content">
+<ol data-role="listview">
+<script language="javascript">
+function WriteToFile()
+{
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+var s = fso.CreateTextFile("C:\\NewFile.txt", true);
+var text=document.getElementById("TextArea1").innerText;
+s.WriteLine(text);
+s.WriteLine('***********************');
+s.Close();
+s.Save();
+}
+</script>
+    <form name="abc">
+<textarea name="text"></textarea>
+<button onclick="WriteToFile()">click to save</Button>  
+</form> 
+</ol>
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+    
+    //random thought
+    
+      <div data-role="page" id="Random Thought">
+
+	<div data-role="header">
+		<h1>Random Thoughts</h1>
+        <a href="#Home" class="ui-btn ui-btn-inline ui-btn-icon-notext ui-corner-left">HOME</a>
+             
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content"> 
+        <ul data-role="listview">
+             <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// Use the following variable to specify 
+// the number of random quotes
+var NumberOfWords = 28
+
+var words = new BuildArray(NumberOfWords)
+
+// Use the following variables to 
+// define your random quotes:
+words[1] = "Live below your means"
+words[2] = "Always have cash at hand in case of emergencies"
+words[3] = "Always keep an eye out, but help with limitations"
+words[4] = "Whatever you have in mind, try it out and let it benefit you"
+words[5] = "Always reach for the stars"
+words[6] = "The rich act poor and they stay rich."
+words[7] = "If it's a financial risk, consult with a professional"
+words[8] = "Keep everything in check"
+words[9] = "Do it now before someone else does"
+words[10] = "If you are the smartest man in the room, then leave the room"
+words[11] = "Always check your credit score"
+words[12] = "Never sign contracts unless you know everything involved"
+words[13] = "Paint without your glasses"
+words[14] = "Illustrate with your heart"
+words[15] = "Be creative"
+words[16] = "Watch your mouth"
+words[17] = "Be nice to others"
+words[18] = "Do on to others before they do on to you"
+words[19] = "Whatever you are, be a good one"
+words[20] = "Keep an eye on the stock market"
+words[21] = "Create a savings account"
+words[22] = "Research money markets"
+words[23] = "Never trust lawyers, but always have them on your side"
+words[24] = "Have your money work for you"
+words[25] = "You never stop learning"
+words[26] = "You are young at heart"
+words[27] = "S&P 500, DOWJones, NASDAQ"
+words[28] = "Stress out? Take five deep breaths"
+
+function BuildArray(size){
+this.length = size
+for (var i = 1; i <= size; i++){
+this[i] = null}
+return this
+}
+
+function PickRandomWord(frm) {
+// Generate a random number between 1 and NumberOfWords
+var rnd = Math.ceil(Math.random() * NumberOfWords)
+
+// Display the text inside the text box
+frm.WordBox.value = words[rnd]
+}
+//-->
+</SCRIPT>
+</head>
+            
+<body>
+
+<FORM NAME="WordForm">
+<INPUT TYPE=TEXT SIZE=11 NAME="WordBox"><BR>
+<INPUT TYPE=BUTTON VALUE="Click Here to Get a Random Quote" onClick="PickRandomWord(document.WordForm);" > 
+<input TYPE="reset" VALUE="CLEAR" onClick="clearForm(this.form)">
+</FORM>
+</body>
+</html> 
+        <div data-role="footer" data-position="fixed">
+		<h4>&copy; 2015 APPlaud Studios</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
